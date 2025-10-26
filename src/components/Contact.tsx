@@ -16,7 +16,7 @@ export default function Contact() {
             <a
               key={index}
               href={item.link}
-              className="text-5xl hover:underline hover:underline-offset-2 decoration-lime-300 font-bold md:text-7x lg:text-8xl"
+              className="text-4xl hover:underline hover:underline-offset-2 decoration-lime-300 font-bold md:text-7x lg:text-8xl"
             >
               {item.name}
             </a>
