@@ -4,6 +4,25 @@
     "title": "Software Engineer, Layout Designer",
     "description": "Aenean a velit mi. Donec fermentum libero eget massa lacinia ultricies. Nulla vitae varius sem. Nunc ut porta nisi, vel efficitur nulla. Proin fringilla, lectus quis semper tristique, mi lacus scelerisque odio, blandit egestas massa magna nec sem. Vivamus magna justo, mollis quis iaculis id, rhoncus ut metus. Sed venenatis.",
     "github": "https://github.com/ukasyaaah",
-    "project": ""
+    "project": "",
+    "contact": [
+      {
+        "name": "Mail",
+        "link": "mailto:ukasyaaah@gmail.com"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://linkedin.com/in/ukasyaaah"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://instagram.com/ukasyaaah"
+      },
+
+      {
+        "name": "Github",
+        "link": "https://github.com/ukasyaaah"
+      }
+    ]
   }
 }

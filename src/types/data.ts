@@ -4,4 +4,10 @@ export default interface Data {
   description: string;
   github: string;
   project: string;
+  contact: [
+    {
+      name: string;
+      link: string;
+    }
+  ];
 }
