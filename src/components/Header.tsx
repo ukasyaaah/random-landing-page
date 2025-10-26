@@ -1,7 +1,10 @@
 import ParticlesBg from "particles-bg";
-import type Data from "../types/data";
+import { Fade } from "react-awesome-reveal";
+import { useContext } from "react";
+import { DataContext } from "../context/DataContext";
 
-export default function Header({ data }: { data: Data }) {
+export default function Header() {
+  const data = useContext(DataContext);
   return (
     <>
       <div className="flex flex-col relative mx-auto  text-white flex-wrap h-screen justify-center items-center gap-y-4 ">
@@ -12,7 +15,7 @@ export default function Header({ data }: { data: Data }) {
               <a href="/">Home</a>
             </li>
             <li className=" text-white hover:text-red-500">
-              <a href="/about">About</a>
+              <a href="#about">About</a>
             </li>
             <li className=" text-white hover:text-red-500">
               <a href="/resume">Resume</a>
@@ -22,22 +25,23 @@ export default function Header({ data }: { data: Data }) {
             </li>
           </ul>
         </nav>
+        <Fade direction="up" cascade triggerOnce>
+          <h1 className="text-5xl md:text-8xl lg:text-9xl  text-center mx-4 font-bold">
+            {data?.name}
+          </h1>
+          <h1 className="text-md md:text-lg lg:text-xl  text-center mx-4 font-bold">
+            {data?.title}
+          </h1>
 
-        <h1 className="text-5xl md:text-8xl lg:text-9xl  text-center mx-4 font-bold">
-          {data?.name}
-        </h1>
-        <h1 className="text-md md:text-lg lg:text-xl  text-center mx-4 font-bold">
-          {data?.description}
-        </h1>
-
-        <div className="flex flex-wrap  gap-3">
-          <button className="bg-red-500 px-5 py-3 rounded-lg">
-            <a href={data?.project}>Project</a>
-          </button>
-          <button className="bg-red-500 px-5 py-3 rounded-lg">
-            <a href={data?.github}>Github</a>
-          </button>
-        </div>
+          <div className="flex flex-wrap  gap-3">
+            <button className="bg-red-500 px-5 py-3 rounded-lg">
+              <a href={data?.project}>Project</a>
+            </button>
+            <button className="bg-red-500 px-5 py-3 rounded-lg">
+              <a href={data?.github}>Github</a>
+            </button>
+          </div>
+        </Fade>
       </div>
     </>
   );
