@@ -8,12 +8,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen  bg-lime-300 flex flex-col  items-center justify-center"
+      className="min-h-screen bg-lime-300 flex flex-col  items-center justify-center"
     >
       <Fade cascade duration={1000}>
         <div className="flex flex-col p-5 rounded-lg bg-black text-lime-300 gap-5">
-          {data?.contact.map((item) => (
+          {data?.contact.map((item, index) => (
             <a
+              key={index}
               href={item.link}
               className="text-5xl hover:underline hover:underline-offset-2 decoration-lime-300 font-bold md:text-7x lg:text-8xl"
             >

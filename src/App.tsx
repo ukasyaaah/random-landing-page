@@ -4,6 +4,7 @@ import About from "./components/About";
 import useData from "./hooks/useData";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
+import Project from "./components/Project";
 
 export default function App() {
   const data = useData();
@@ -14,6 +15,7 @@ export default function App() {
         <Navbar />
         <Header />
         <About />
+        <Project />
         <Contact />
       </DataContext.Provider>
     </div>

@@ -3,7 +3,12 @@ export default interface Data {
   title: string;
   description: string;
   github: string;
-  project: string;
+  project: [
+    {
+      name: string;
+      link: string;
+    }
+  ];
   contact: [
     {
       name: string;

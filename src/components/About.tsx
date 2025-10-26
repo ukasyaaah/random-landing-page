@@ -8,7 +8,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen  bg-black flex flex-col items-center justify-center"
+      className="min-h-screen bg-black flex flex-col items-center justify-center"
     >
       <Fade cascade duration={1000}>
         <h3 className="text-3xl md:text-4xl text-lime-300 lg:text-5xl font-extrabold p-7 md:p-14 lg:p-22 ">

@@ -6,6 +6,18 @@
 }
 
 *::selection {
-  background-color: greenyellow;
+  background-color: #bbf451;
   color: black;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color:  #bbf451 black;
+}
+
+.selected-section {
+  *::selection {
+    color: #bbf451;
+    background-color: black;
+  }
 }

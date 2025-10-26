@@ -9,7 +9,6 @@ export default function Header() {
     <>
       <div className="flex flex-col relative mx-auto  text-black flex-wrap h-screen justify-center items-center gap-y-4 ">
         <ParticlesBg type="cobweb" color="#bbf451" bg={true} />
-      
         <Fade direction="up" cascade triggerOnce>
           <h1 className=" text-5xl md:text-8xl lg:text-9xl  text-center mx-4 font-bold">
             {data?.name}
@@ -20,7 +19,7 @@ export default function Header() {
 
           <div className="flex flex-wrap font-bold  gap-3">
             <button className="bg-lime-300 px-5 py-3 rounded-lg">
-              <a href={data?.project}>Project</a>
+              <a href="#project">Project</a>
             </button>
             <button className="bg-lime-300 px-5 py-3 rounded-lg">
               <a href={data?.github}>Github</a>
